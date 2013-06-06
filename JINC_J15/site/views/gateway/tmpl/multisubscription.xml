@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="LAYOUT_SUBSCRIPTION" hidden="true">
+        <message>
+			<![CDATA[LAYOUT_SUBSCRIPTION_DESC]]>
+        </message>
+    </layout>
+</metadata>

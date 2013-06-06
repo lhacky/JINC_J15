@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+    <name>JINC</name>
+    <author>lhacky</author>
+    <authorEmail>lhacky@altervista.org</authorEmail>
+    <authorUrl>http://lhacky.altervista.org/jextensions</authorUrl>
+    <creationDate>June 2013</creationDate>
+    <copyright>Copyright (C) 2010 - Lhacky</copyright>
+    <license>GNU/GPL http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <version>0.9.6</version>
+    <description>
+        <![CDATA[
+                <p><h2>JINC: Joomla! Integrated Newsletter Component</h2></p>
+                <div style="float:left; margin:10px;">
+                    <img src="components/com_jinc/assets/images/icons/icon-120-jinc.png" alt="http://lhacky.altervista.org/jextensions/"  />
+                </div>
+                <p>
+                    Continue to be in touch with your users through newsletters using JINC !!!
+                </p>
+                <p>
+                    For news and documentation: <a target="_blank" href="http://lhacky.altervista.org/jextensions/">Lhacky! Extensions Website</a>
+                </p>
+                <p>
+                    For support write down to our forum: <a target="_blank" href="http://lhacky.altervista.org/jextensions/index.php?option=com_ccboard&view=forumlist&Itemid=31">Lhacky! Extensions Forum</a>
+                </p>
+                <p>Begin to work with JINC: <a href="index.php?option=com_jinc">JINC Administration</a></p>
+                <p>Loading sample data: <a href="index.php?option=com_jinc&controller=tools&task=loadSampleData">Loading sample data</a></p>
+
+                ]]>
+    </description>
+
+    <installfile>install/install.php</installfile>
+    <uninstallfile>install/uninstall.php</uninstallfile>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">install/install.sql</file>
+            <file driver="mysql">install/install.sql</file>
+        </sql>
+    </install>
+
+    <uninstall>
+    </uninstall>
+
+    <administration>
+        <menu img="components/com_jinc/assets/images/icons/icon-16-jinc.png">JINC</menu>
+        <!-- Sub Menu Section -->
+        <submenu>
+            <menu view="newsletters" img="components/com_jinc/assets/images/icons/icon-16-newsletter.png">NEWSLETTERS</menu>
+            <menu view="notices" img="components/com_jinc/assets/images/icons/icon-16-notices.png">NOTICES</menu>
+            <menu controller="message" view="messages" img="components/com_jinc/assets/images/icons/icon-16-message.png">MESSAGES</menu>
+            <menu view="templates" img="components/com_jinc/assets/images/icons/icon-16-template.png">TEMPLATES</menu>
+            <menu controller="subscriber" view="subscribers" img="components/com_jinc/assets/images/icons/icon-16-subscribers.png">SUBSCRIBERS</menu>
+            <menu view="groups" img="components/com_jinc/assets/images/icons/icon-16-groups.png">GROUPS</menu>
+            <menu view="tools" img="components/com_jinc/assets/images/icons/icon-16-tools.png">TOOLS</menu>
+        </submenu>
+        <!-- Administration Main File Copy Section -->
+        <files folder="admin">
+            <filename>admin.jinc.php</filename>
+            <filename>assets/css/index.html</filename>
+            <filename>assets/css/jinc_admin.css</filename>
+            <filename>assets/flash/index.html</filename>
+            <filename>assets/flash/open-flash-chart.swf</filename>
+            <filename>assets/images/active.png</filename>
+            <filename>assets/images/back.png</filename>
+            <filename>assets/images/icons/active.png</filename>
+            <filename>assets/images/icons/add.png</filename>
+            <filename>assets/images/icons/ajax-loader.gif</filename>
+            <filename>assets/images/icons/attachment.png</filename>
+            <filename>assets/images/icons/back.png</filename>
+            <filename>assets/images/icons/delete.png</filename>
+            <filename>assets/images/icons/file.png</filename>
+            <filename>assets/images/icons/finished.png</filename>
+            <filename>assets/images/icons/folder.png</filename>
+            <filename>assets/images/icons/history.png</filename>
+            <filename>assets/images/icons/icon-120-jinc.png</filename>
+            <filename>assets/images/icons/icon-16-groups.png</filename>
+            <filename>assets/images/icons/icon-16-jinc.png</filename>
+            <filename>assets/images/icons/icon-16-message.png</filename>
+            <filename>assets/images/icons/icon-16-newsletter.png</filename>
+            <filename>assets/images/icons/icon-16-notices.png</filename>
+            <filename>assets/images/icons/icon-16-stats.png</filename>
+            <filename>assets/images/icons/icon-16-subscribers.png</filename>
+            <filename>assets/images/icons/icon-16-template.png</filename>
+            <filename>assets/images/icons/icon-16-tools.png</filename>
+            <filename>assets/images/icons/icon-32-approve.png</filename>
+            <filename>assets/images/icons/icon-32-attributes.png</filename>
+            <filename>assets/images/icons/icon-32-groups.png</filename>
+            <filename>assets/images/icons/icon-32-jinc.png</filename>
+            <filename>assets/images/icons/icon-32-message.png</filename>
+            <filename>assets/images/icons/icon-32-newsletter.png</filename>            
+            <filename>assets/images/icons/icon-32-stats.png</filename>
+            <filename>assets/images/icons/icon-32-subscribers.png</filename>
+            <filename>assets/images/icons/icon-32-template.png</filename>
+            <filename>assets/images/icons/icon-32-load-template.png</filename>
+            <filename>assets/images/icons/icon-32-tools.png</filename>
+            <filename>assets/images/icons/icon-48-attributes.png</filename>
+            <filename>assets/images/icons/icon-48-config.png</filename>
+            <filename>assets/images/icons/icon-48-groups.png</filename>
+            <filename>assets/images/icons/icon-48-info.png</filename>
+            <filename>assets/images/icons/icon-48-jinc.png</filename>
+            <filename>assets/images/icons/icon-48-message.png</filename>
+            <filename>assets/images/icons/icon-48-newsletter.png</filename>
+            <filename>assets/images/icons/icon-48-notices.png</filename>
+            <filename>assets/images/icons/icon-48-stats.png</filename>
+            <filename>assets/images/icons/icon-48-subscribers.png</filename>
+            <filename>assets/images/icons/icon-48-template.png</filename>
+            <filename>assets/images/icons/icon-48-tools.png</filename>
+            <filename>assets/images/icons/icon-people-add.jpg</filename>
+            <filename>assets/images/icons/icon-people-create.jpg</filename>
+            <filename>assets/images/icons/index.html</filename>
+            <filename>assets/images/icons/jinc-ajax-loader.gif</filename>
+            <filename>assets/images/icons/jinc.png</filename>
+            <filename>assets/images/icons/pause.png</filename>
+            <filename>assets/images/icons/pause_disabled.png</filename>
+            <filename>assets/images/icons/pause_old.png</filename>
+            <filename>assets/images/icons/play.png</filename>
+            <filename>assets/images/icons/play_disabled.png</filename>
+            <filename>assets/images/icons/prev_folder.png</filename>
+            <filename>assets/images/icons/running.png</filename>
+            <filename>assets/images/icons/running_1.png</filename>
+            <filename>assets/images/icons/simple-loader.gif</filename>
+            <filename>assets/images/icons/stop.png</filename>
+            <filename>assets/images/icons/stop_disabled.png</filename>
+            <filename>assets/images/icons/waiting.png</filename>
+            <filename>assets/images/index.html</filename>
+            <filename>assets/images/progress/index.html</filename>
+            <filename>assets/images/progress/violet.gif</filename>
+            <filename>assets/images/progress/violet_back.gif</filename>
+            <filename>assets/images/send.png</filename>
+            <filename>assets/images/waiting.png</filename>
+            <filename>assets/index.html</filename>
+            <filename>assets/js/commons.js</filename>
+            <filename>assets/js/phplivex.js</filename>
+            <filename>assets/js/swfobject.js</filename>
+            <filename>assets/js/json2.js</filename>
+            <filename>classes/core/acl.php</filename>
+            <filename>classes/core/aclentry.php</filename>
+            <filename>classes/core/attribute.php</filename>
+            <filename>classes/core/bulkmessage.php</filename>
+            <filename>classes/core/group.php</filename>
+            <filename>classes/core/groupfactory.php</filename>
+            <filename>classes/core/jcontactinforetriever.php</filename>
+            <filename>classes/core/jincobject.php</filename>
+            <filename>classes/core/juserinforetriever.php</filename>
+            <filename>classes/core/message.php</filename>
+            <filename>classes/core/messagefactory.php</filename>
+            <filename>classes/core/messagetemplate.php</filename>
+            <filename>classes/core/newsletter.php</filename>
+            <filename>classes/core/newsletterfactory.php</filename>
+            <filename>classes/core/newsletterimporter.php</filename>
+            <filename>classes/core/notice.php</filename>
+            <filename>classes/core/personalmessage.php</filename>
+            <filename>classes/core/privatenewsletter.php</filename>
+            <filename>classes/core/process.php</filename>
+            <filename>classes/core/protectednewsletter.php</filename>
+            <filename>classes/core/publicnewsletter.php</filename>
+            <filename>classes/core/publicretriever.php</filename>
+            <filename>classes/core/sentmsgevent.php</filename>
+            <filename>classes/core/standardprocess.php</filename>
+            <filename>classes/core/subsretriever.php</filename>
+            <filename>classes/core/subscriptionnotifyevent.php</filename>
+            <filename>classes/factory.php</filename>
+            <filename>classes/frontend/index.html</filename>
+            <filename>classes/frontend/jincfrontendhelper.php</filename>
+            <filename>classes/frontend/jincinputminimal.php</filename>
+            <filename>classes/frontend/jincinputrenderer.php</filename>
+            <filename>classes/frontend/jincinputstandard.php</filename>
+            <filename>classes/graphics/compositegraph.php</filename>
+            <filename>classes/graphics/container.php</filename>
+            <filename>classes/graphics/gchart.php</filename>
+            <filename>classes/graphics/gcircledpoint.php</filename>
+            <filename>classes/graphics/gimage.php</filename>
+            <filename>classes/graphics/gline.php</filename>
+            <filename>classes/graphics/gpoint.php</filename>
+            <filename>classes/graphics/gpointed.php</filename>
+            <filename>classes/graphics/gpolygon.php</filename>
+            <filename>classes/graphics/graph.php</filename>
+            <filename>classes/graphics/gsegment.php</filename>
+            <filename>classes/graphics/gstring.php</filename>
+            <filename>classes/graphics/index.html</filename>
+            <filename>classes/graphics/chartrenderer.php</filename>
+            <filename>classes/graphics/builtinrenderer.php</filename>
+            <filename>classes/graphics/openflashrenderer.php</filename>
+            <filename>classes/graphics/php-ofc-library/index.html</filename>
+            <filename>classes/graphics/php-ofc-library/JSON.php</filename>
+            <filename>classes/graphics/php-ofc-library/dot_base.php</filename>
+            <filename>classes/graphics/php-ofc-library/json_format.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_area_base.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_area_hollow.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_area_line.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_arrow.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_bar.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_bar_3d.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_bar_base.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_bar_filled.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_bar_glass.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_bar_sketch.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_bar_stack.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_candle.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_hbar.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_line.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_line_base.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_line_dot.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_line_hollow.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_line_style.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_menu.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_pie.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_radar_axis.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_radar_axis_labels.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_radar_spoke_labels.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_scatter.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_scatter_line.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_shape.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_sugar.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_tags.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_title.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_tooltip.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_upload_image.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_x_axis.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_x_axis_label.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_x_axis_labels.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_x_legend.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_y_axis.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_y_axis_base.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_y_axis_label.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_y_axis_labels.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_y_axis_right.php</filename>
+            <filename>classes/graphics/php-ofc-library/ofc_y_legend.php</filename>
+            <filename>classes/graphics/php-ofc-library/open-flash-chart-object.php</filename>
+            <filename>classes/graphics/php-ofc-library/open-flash-chart.php</filename>
+            <filename>classes/index.html</filename>
+            <filename>classes/statistics/dailytimeline.php</filename>
+            <filename>classes/statistics/hourlytimeline.php</filename>
+            <filename>classes/statistics/monthlytimeline.php</filename>
+            <filename>classes/statistics/newsstatistic.php</filename>
+            <filename>classes/statistics/numsstatistic.php</filename>
+            <filename>classes/statistics/sentevent.php</filename>
+            <filename>classes/statistics/sentstatistic.php</filename>
+            <filename>classes/statistics/statistic.php</filename>
+            <filename>classes/statistics/statisticalevent.php</filename>
+            <filename>classes/statistics/statisticfactory.php</filename>
+            <filename>classes/statistics/subscriptionevent.php</filename>
+            <filename>classes/statistics/subsstatistic.php</filename>
+            <filename>classes/statistics/timeline.php</filename>
+            <filename>classes/statistics/unsubscriptionevent.php</filename>
+            <filename>classes/statistics/unsubsstatistic.php</filename>
+            <filename>classes/statistics/weeklytimeline.php</filename>
+            <filename>classes/utility/filelogger.php</filename>
+            <filename>classes/utility/index.html</filename>
+            <filename>classes/utility/inputchecker.php</filename>
+            <filename>classes/utility/jinchelper.php</filename>
+            <filename>classes/utility/jinchtmlhelper.php</filename>
+            <filename>classes/utility/jincjoomlahelper.php</filename>
+            <filename>classes/utility/jsonresponse.php</filename>
+            <filename>classes/utility/logger.php</filename>
+            <filename>classes/utility/loghandler.php</filename>
+            <filename>classes/utility/parameterprovider.php</filename>
+            <filename>classes/utility/PHPLiveX.php</filename>
+            <filename>classes/utility/randomizer.php</filename>
+            <filename>classes/utility/servicelocator.php</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>controllers/group.php</filename>
+            <filename>controllers/index.html</filename>
+            <filename>controllers/message.php</filename>
+            <filename>controllers/newsletter.php</filename>
+            <filename>controllers/notice.php</filename>
+            <filename>controllers/subscriber.php</filename>
+            <filename>controllers/template.php</filename>
+            <filename>controllers/tools.php</filename>
+            <filename>elements/index.html</filename>
+            <filename>elements/newsletter.php</filename>
+            <filename>index.html</filename>
+            <filename>install/install.sql</filename>
+            <filename>install/uninstall.sql</filename>
+            <filename>install/upgrade.sql</filename>
+            <filename>language/en-GB.com_jinc.ini</filename>
+            <filename>language/en-GB.com_jinc.menu.ini</filename>
+            <filename>language/en-GB.mod_subscription_jinc.ini</filename>
+            <filename>language/index.html</filename>
+            <filename>language/it-IT.com_jinc.ini</filename>
+            <filename>language/it-IT.com_jinc.menu.ini</filename>
+            <filename>language/it-IT.mod_subscription_jinc.ini</filename>
+            <filename>models/attributes.php</filename>
+            <filename>models/group.php</filename>
+            <filename>models/groups.php</filename>
+            <filename>models/index.html</filename>
+            <filename>models/mediaselection.php</filename>
+            <filename>models/message.php</filename>
+            <filename>models/messages.php</filename>
+            <filename>models/newsletter.php</filename>
+            <filename>models/newsletters.php</filename>
+            <filename>models/notice.php</filename>
+            <filename>models/notices.php</filename>
+            <filename>models/subscriber.php</filename>
+            <filename>models/subscribers.php</filename>
+            <filename>models/template.php</filename>
+            <filename>models/templates.php</filename>
+            <filename>models/tools.php</filename>
+            <filename>models/users.php</filename>
+            <filename>tables/group.php</filename>
+            <filename>tables/index.html</filename>
+            <filename>tables/message.php</filename>
+            <filename>tables/newsletter.php</filename>
+            <filename>tables/notice.php</filename>
+            <filename>tables/subscriber.php</filename>
+            <filename>tables/template.php</filename>
+            <filename>views/attributes/index.html</filename>
+            <filename>views/attributes/tmpl/default.php</filename>
+            <filename>views/attributes/tmpl/index.html</filename>
+            <filename>views/attributes/view.html.php</filename>
+            <filename>views/group/index.html</filename>
+            <filename>views/group/tmpl/form.php</filename>
+            <filename>views/group/tmpl/index.html</filename>
+            <filename>views/group/view.html.php</filename>
+            <filename>views/groups/index.html</filename>
+            <filename>views/groups/tmpl/default.php</filename>
+            <filename>views/groups/tmpl/index.html</filename>
+            <filename>views/groups/tmpl/selection.php</filename>
+            <filename>views/groups/view.html.php</filename>
+            <filename>views/index.html</filename>
+            <filename>views/jinc/index.html</filename>
+            <filename>views/jinc/tmpl/default.php</filename>
+            <filename>views/jinc/tmpl/index.html</filename>
+            <filename>views/jinc/view.html.php</filename>
+            <filename>views/mediaselection/index.html</filename>
+            <filename>views/mediaselection/view.html.php</filename>
+            <filename>views/mediaselection/tmpl/default_doc.php</filename>
+            <filename>views/mediaselection/tmpl/default_folder.php</filename>
+            <filename>views/mediaselection/tmpl/default_img.php</filename>
+            <filename>views/mediaselection/tmpl/default_up.php</filename>
+            <filename>views/mediaselection/tmpl/default.php</filename>            
+            <filename>views/message/index.html</filename>
+            <filename>views/message/tmpl/form.php</filename>
+            <filename>views/message/tmpl/history.php</filename>
+            <filename>views/message/tmpl/index.html</filename>
+            <filename>views/message/tmpl/send.php</filename>
+            <filename>views/message/view.html.php</filename>
+            <filename>views/messages/index.html</filename>
+            <filename>views/messages/tmpl/default.php</filename>
+            <filename>views/messages/tmpl/index.html</filename>
+            <filename>views/messages/view.html.php</filename>
+            <filename>views/newsletter/index.html</filename>
+            <filename>views/newsletter/tmpl/form.php</filename>
+            <filename>views/newsletter/tmpl/import.php</filename>
+            <filename>views/newsletter/tmpl/index.html</filename>
+            <filename>views/newsletter/tmpl/uploadcsv.php</filename>
+            <filename>views/newsletter/view.html.php</filename>
+            <filename>views/newsletters/index.html</filename>
+            <filename>views/newsletters/tmpl/default.php</filename>
+            <filename>views/newsletters/tmpl/index.html</filename>
+            <filename>views/newsletters/view.html.php</filename>
+            <filename>views/notice/index.html</filename>
+            <filename>views/notice/tmpl/form.php</filename>
+            <filename>views/notice/tmpl/index.html</filename>
+            <filename>views/notice/view.html.php</filename>
+            <filename>views/notices/index.html</filename>
+            <filename>views/notices/tmpl/default.php</filename>
+            <filename>views/notices/tmpl/index.html</filename>
+            <filename>views/notices/view.html.php</filename>
+            <filename>views/stats/index.html</filename>
+            <filename>views/stats/tmpl/default.php</filename>
+            <filename>views/stats/tmpl/index.html</filename>
+            <filename>views/stats/view.html.php</filename>
+            <filename>views/subscriber/index.html</filename>
+            <filename>views/subscriber/tmpl/default.php</filename>
+            <filename>views/subscriber/tmpl/index.html</filename>
+            <filename>views/subscriber/view.html.php</filename>
+            <filename>views/subscribers/index.html</filename>
+            <filename>views/subscribers/tmpl/default.php</filename>
+            <filename>views/subscribers/tmpl/index.html</filename>
+            <filename>views/subscribers/view.html.php</filename>
+            <filename>views/template/index.html</filename>
+            <filename>views/template/tmpl/form.php</filename>
+            <filename>views/template/tmpl/index.html</filename>
+            <filename>views/template/view.html.php</filename>
+            <filename>views/templates/index.html</filename>
+            <filename>views/templates/tmpl/default.php</filename>
+            <filename>views/templates/tmpl/index.html</filename>
+            <filename>views/templates/tmpl/select.php</filename>
+            <filename>views/templates/view.html.php</filename>
+            <filename>views/tools/index.html</filename>
+            <filename>views/tools/tmpl/default.php</filename>
+            <filename>views/tools/tmpl/index.html</filename>
+            <filename>views/tools/view.html.php</filename>
+            <filename>views/users/index.html</filename>
+            <filename>views/users/tmpl/default.php</filename>
+            <filename>views/users/tmpl/index.html</filename>
+            <filename>views/users/view.html.php</filename>
+        </files>
+        <languages folder="admin/language">
+            <language tag="en-GB">en-GB.com_jinc.ini</language>
+            <language tag="en-GB">en-GB.com_jinc.menu.ini</language>
+            <language tag="en-GB">en-GB.mod_subscription_jinc.ini</language>
+            <language tag="it-IT">it-IT.com_jinc.ini</language>
+            <language tag="it-IT">it-IT.com_jinc.menu.ini</language>
+            <language tag="it-IT">it-IT.mod_subscription_jinc.ini</language>
+            <language tag="es-ES">es-ES.com_jinc.ini</language>
+            <language tag="es-ES">es-ES.com_jinc.menu.ini</language>
+            <language tag="es-ES">es-ES.mod_subscription_jinc.ini</language>
+        </languages>
+        <languages>
+        </languages>
+    </administration>
+
+    <files folder="site">
+        <filename>assets/css/index.html</filename>
+        <filename>assets/css/multisubscription.css</filename>
+        <filename>assets/images/index.html</filename>
+        <filename>assets/images/icons/attachment.png</filename>
+        <filename>assets/images/icons/icon-people-subscribe.jpg</filename>
+        <filename>assets/images/icons/icon-people-unscribe.jpg</filename>
+        <filename>assets/images/icons/index.html</filename>
+        <filename>assets/images/icons/subscribe_img.gif</filename>
+        <filename>assets/images/icons/unscribe_img.gif</filename>
+        <filename>assets/index.html</filename>
+        <filename>assets/js/index.html</filename>
+        <filename>assets/js/jinc.js</filename>
+        <filename>assets/themes/blue/icon_messages.jpg</filename>
+        <filename>assets/themes/blue/icon_subscribe.jpg</filename>
+        <filename>assets/themes/blue/index.html</filename>
+        <filename>assets/themes/blue/msgbox_bottom.png</filename>
+        <filename>assets/themes/blue/msgbox_left.png</filename>
+        <filename>assets/themes/blue/msgbox_top.png</filename>
+        <filename>assets/themes/blue.css</filename>
+        <filename>assets/themes/ice/caption.png</filename>
+        <filename>assets/themes/ice/index.html</filename>
+        <filename>assets/themes/ice/msgbox_bottom.png</filename>
+        <filename>assets/themes/ice/msgbox_left.png</filename>
+        <filename>assets/themes/ice/msgbox_top.png</filename>
+        <filename>assets/themes/ice.css</filename>
+        <filename>assets/themes/red/index.html</filename>
+        <filename>assets/themes/red/msgbox_bottom.png</filename>
+        <filename>assets/themes/red/msgbox_left.png</filename>
+        <filename>assets/themes/red/msgbox_top.png</filename>
+        <filename>assets/themes/red.css</filename>
+        <filename>controller.php</filename>
+        <filename>controllers/index.html</filename>
+        <filename>controllers/newsletter.php</filename>
+        <filename>index.html</filename>
+        <filename>jinc.php</filename>
+        <filename>models/index.html</filename>
+        <filename>models/message.php</filename>
+        <filename>models/newsletter.php</filename>
+        <filename>models/notice.php</filename>
+        <filename>views/index.html</filename>        
+        <filename>views/gateway/index.html</filename>
+        <filename>views/gateway/tmpl/default.php</filename>
+        <filename>views/gateway/tmpl/default.xml</filename>
+        <filename>views/gateway/tmpl/error.php</filename>
+        <filename>views/gateway/tmpl/error.xml</filename>
+        <filename>views/gateway/tmpl/multisubscription.php</filename>
+        <filename>views/gateway/tmpl/multisubscription.xml</filename>        
+        <filename>views/gateway/view.html.php</filename>        
+        <filename>views/message/index.html</filename>
+        <filename>views/message/tmpl/default.php</filename>
+        <filename>views/message/tmpl/default.xml</filename>
+        <filename>views/message/view.html.php</filename>
+        <filename>views/newsletter/index.html</filename>
+        <filename>views/newsletter/tmpl/default.php</filename>
+        <filename>views/newsletter/tmpl/default.xml</filename>
+        <filename>views/newsletter/tmpl/index.html</filename>
+        <filename>views/newsletter/tmpl/unsubscription.php</filename>
+        <filename>views/newsletter/tmpl/unsubscription.xml</filename>
+        <filename>views/newsletter/view.html.php</filename>
+        <filename>views/notice/index.html</filename>
+        <filename>views/notice/tmpl/default.php</filename>
+        <filename>views/notice/tmpl/index.html</filename>
+        <filename>views/notice/view.html.php</filename>
+        <folder>securimage</folder>
+    </files>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB.com_jinc.ini</language>
+        <language tag="it-IT">it-IT.com_jinc.ini</language>
+        <language tag="fr-FR">fr-FR.com_jinc.ini</language>
+        <language tag="es-ES">es-ES.com_jinc.ini</language>
+        <language tag="de-DE">de-DE.com_jinc.ini</language>
+        <language tag="de-DE">nl-NL.com_jinc.ini</language>
+    </languages>
+
+    <modules>
+        <module module="mod_jinc_news_access" title="JINC Newsletters Access" position="left" order="-1" client="site" published="true">
+            <files folder="mod_jinc_news_access">
+                <filename>index.html</filename>
+                <filename>mod_jinc_news_access.php</filename>
+                <filename>mod_jinc_news_access.xml</filename>
+            </files>
+            <params>
+                <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+            </params>
+            <languages />
+            <media />
+        </module>
+        <module module="mod_jinc_subscription" title="JINC Newsletters Subscription" position="left" order="-1" client="site">
+            <files folder="mod_jinc_subscription">
+                <filename>index.html</filename>
+                <filename>mod_jinc_subscription.php</filename>
+                <filename>mod_jinc_subscription.xml</filename>
+                <filename>tmpl/index.html</filename>
+                <filename>tmpl/default.php</filename>
+            </files>
+            <params addpath="/administrator/components/com_jinc/elements">
+                <param name="news_id" type="newsletter" section="com_jinc" default="0" label="CONFIG_SELECT_NEWSLETTER" description="CONFIG_SELECT_NEWSLETTER_DESC" />
+                <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+            </params>
+            <languages folder="mod_jinc_subscription/language">
+                <language tag="en-GB">en-GB.mod_subscription_jinc.ini</language>
+                <language tag="it-IT">it-IT.mod_subscription_jinc.ini</language>
+            </languages>
+            <media />
+        </module>
+        
+        <module module="mod_jinc_multisubscription" title="JINC Newsletters Multi Subscription" position="left" order="-1" client="site">
+            <files folder="mod_jinc_multisubscription">
+                <filename>index.html</filename>
+                <filename>mod_jinc_multisubscription.php</filename>
+                <filename>mod_jinc_multisubscription.xml</filename>
+                <filename>tmpl/index.html</filename>
+                <filename>tmpl/default.php</filename>
+            </files>
+            <params addpath="/administrator/components/com_jinc/elements">
+                <param name="news_id" type="newsletter" section="com_jinc" default="0" label="CONFIG_SELECT_NEWSLETTER" description="CONFIG_SELECT_NEWSLETTER_DESC" />
+                <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+            </params>
+            <languages folder="mod_jinc_multisubscription/language">
+                <language tag="en-GB">en-GB.mod_jinc_multisubscription.ini</language>
+                <language tag="it-IT">it-IT.mod_jinc_multisubscription.ini</language>
+            </languages>
+            <media />
+        </module>        
+        
+        
+        <module module="mod_jinc_unsubscription" title="JINC Newsletters UnSubscription" position="left" order="-1" client="site">
+            <files folder="mod_jinc_unsubscription">
+                <filename>index.html</filename>
+                <filename>mod_jinc_unsubscription.php</filename>
+                <filename>mod_jinc_unsubscription.xml</filename>
+                <filename>tmpl/index.html</filename>
+                <filename>tmpl/default.php</filename>
+            </files>
+            <params addpath="/administrator/components/com_jinc/elements">
+                <param name="news_id" type="newsletter" section="com_jinc" default="0" label="CONFIG_SELECT_NEWSLETTER" description="CONFIG_SELECT_NEWSLETTER_DESC" />
+                <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+            </params>
+            <languages folder="mod_jinc_unsubscription/language">
+                <language tag="en-GB">en-GB.mod_unsubscription_jinc.ini</language>
+                <language tag="it-IT">it-IT.mod_unsubscription_jinc.ini</language>
+            </languages>
+            <media />
+        </module>
+    </modules>
+
+    <plugins>
+        <plugin plugin="JINCSubscription" order="-100" group="user">
+            <files folder="plg_jinc_subscription">
+                <file>JINCSubscription.php</file>
+                <file>JINCSubscription.xml</file>
+            </files>
+
+            <languages />
+            <media />
+        </plugin>
+    </plugins>
+</install>

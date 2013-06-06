@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="LAYOUT_NEWSLETTER_TITLE">
+        <message>
+			<![CDATA[LAYOUT_NEWSLETTER_DESC]]>
+        </message>
+    </layout>
+    <state>
+        <name>LAYOUT_NEWSLETTER_TITLE</name>
+        <description>LAYOUT_NEWSLETTER_DESC</description>
+        <url addpath="/administrator/components/com_jinc/elements">
+            <param name="news_id" type="newsletter" section="com_jinc" default="0" label="CONFIG_SELECT_NEWSLETTER" description="CONFIG_SELECT_NEWSLETTER_DESC" />
+            <!-- <param name="num_msg" type="text" default="5" label="CONFIG_NUM_MSG" description="CONFIG_NUM_MSG_DESC" size="2" /> -->
+        </url>
+    </state>
+</metadata>

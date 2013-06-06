@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="LAYOUT_UNSUBSCRIPTION_TITLE" hidden="true">
+        <message>
+			<![CDATA[LAYOUT_UNSUBSCRIPTION_DESC]]>
+        </message>
+    </layout>
+    <state>
+        <name>LAYOUT_UNSUBSCRIPTION_TITLE</name>
+        <description>LAYOUT_UNSUBSCRIPTION_DESC</description>
+        <url addpath="/administrator/components/com_jinc/elements">
+            <param name="news_id" type="newsletter" section="com_jinc" default="0" label="CONFIG_SELECT_NEWSLETTER" description="CONFIG_SELECT_NEWSLETTER_DESC" />
+        </url>
+    </state>
+</metadata>

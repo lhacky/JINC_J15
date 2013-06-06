@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <params>
+        <param name="mail_x_step" type="text" default="1" label="CONFIG_MAIL_X_STEP" description="CONFIG_MAIL_X_STEP_DESCR"></param>
+        <param name="mail_time_interval" type="text" default="500" label="CONFIG_MAIL_TIME_INTERVAL" description="CONFIG_MAIL_TIME_INTERVAL_DESCR"></param>
+        <param name="mail_max_bcc" type="text" default="50" label="CONFIG_MAIL_MAX_BCC" description="CONFIG_MAIL_MAX_BCC_DESCR"></param>
+        <param name="send_mail" type="radio" default="1" label="CONFIG_SEND_MAIL_LABEL" description="CONFIG_SEND_MAIL_DESCRIPTION">
+            <option value="1">CONFIG_SEND_MAIL_YES</option>
+            <option value="0">CONFIG_SEND_MAIL_NO</option>
+        </param>
+        <param name="log_level" type="list" default="3" label="CONFIG_LOG_LEVEL_LABEL" description="CONFIG_LOG_LEVEL_DESCR">
+            <option value="0">CONFIG_DEBUG</option>
+            <option value="1">CONFIG_FINER</option>
+            <option value="2">CONFIG_FINE</option>
+            <option value="3">CONFIG_INFO</option>
+            <option value="4">CONFIG_WARNING</option>
+            <option value="5">CONFIG_SEVERE</option>
+        </param>
+        <!--
+        <param name="debug_ajax" type="radio" default="1" label="CONFIG_AJAX_DEBUG_LABEL" description="CONFIG_AJAX_DEBUG_DESCRIPTION">
+            <option value="1">YES</option>
+            <option value="0">NO</option>
+        </param>
+        -->
+        <param name="hints" type="radio" default="1" label="CONFIG_HINTS_ONOFF" description="CONFIG_HINTS_ONOFF_DESCRIPTION">
+            <option value="1">YES</option>
+            <option value="0">NO</option>
+        </param>
+        <!--
+        <param name="stop_on_failure" type="radio" default="1" label="CONFIG_STOP_ON_FAILURE" description="CONFIG_STOP_ON_FAILURE_DESCRIPTION">
+            <option value="1">CONFIG_STOP_ON_FAILURE_YES</option>
+            <option value="0">CONFIG_STOP_ON_FAILURE_NO</option>
+        </param>
+        -->
+        <param name="chart_system" type="radio" default="1" label="CONFIG_CHART_SYSTEM" description="CONFIG_CHART_SYSTEM_DESCRIPTION">
+            <option value="0">CONFIG_CHART_SYSTEM_OPENFLASH</option>
+            <option value="1">CONFIG_CHART_SYSTEM_BUILTIN</option>
+        </param>
+    </params>
+</config>

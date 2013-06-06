@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="0.8" type="plugin" group="user">
+    <name>JINCSubscription</name>
+    <creationDate>December 2011</creationDate>
+    <author>Lhacky</author>
+    <authorEmail>lhacky@altervista.org</authorEmail>
+    <authorUrl>http://lhacky.altervista.org/jextensions/</authorUrl>
+    <copyright>Copyright (C) 2010 - Lhacky</copyright>
+    <license>GNU/GPL http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <version>0.9.4</version>
+    <description>Allow newsletter subscription on user registration</description>
+    <files>
+        <filename plugin="JINCSubscription">JINCSubscription.php</filename>
+    </files>
+</install>
